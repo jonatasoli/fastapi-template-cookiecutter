@@ -23,7 +23,7 @@ print(f"ROOT {root_dir}")
 sys.path.append(root_dir)
 
 from ext.base import Base
-from dynaconf import settings
+from config import settings
 from ext.database import get_session
 from main import app
 from ext.database import get_engine

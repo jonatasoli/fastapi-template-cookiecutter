@@ -1,3 +1,12 @@
 [default]
 API_V1_STR="/{{cookiecutter.app_slug}}/v1"
 APP_NAME="Microservice {{cookiecutter.project_name}}"
+
+[development]
+APP_VERSION="1"
+
+[staging]
+APP_VERSION="1"
+
+[production]
+APP_VERSION="1"

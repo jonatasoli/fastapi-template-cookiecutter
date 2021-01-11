@@ -1,16 +1,13 @@
 [tool.poetry]
-name = "partyou-microservice-{{cookiecutter.project_slug}}"
-version = "{{cookiecutter.version}}"
-description = "{{cookiecutter.description}}"
-authors = ["Admin <{{cookiecutter.author_email}}>"]
+name = "partyou-microservice-auth"
+version = "0.1.0"
+description = "Partyou Auth Domain"
+authors = ["Admin <jonatas@partyou.com.br>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 uvicorn = {extras = ["standard"], version = "*"}
 fastapi = "^0.*"
-passlib = {extras = ["bcrypt"], version = "^1.*"}
-pyjwt = "^1.7.1"
-python-jose = {version = "^3.2.0", extras = ["cryptography"]}
 asyncpg = "*"
 loguru = "*"
 dynaconf = "*"
@@ -21,6 +18,7 @@ alembic = "^1.*"
 sqlalchemy = "^1.*"
 gino= "*"
 requests = "^2.25.1"
+pep8 = "^1.7.1"
 
 [tool.poetry.dev-dependencies]
 jedi = "*"
