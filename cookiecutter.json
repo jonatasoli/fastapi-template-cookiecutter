@@ -1,0 +1,9 @@
+{
+  "project_name": "My New Project",
+  "project_slug": "partyou-microservice-{{cookiecutter.project_name|lower|replace(' ', '-')}}",
+  "app_name": "My New App",
+  "app_slug": "{{cookiecutter.app_name|lower|replace(' ', '-')}}",
+  "version": "0.1.0",
+  "description": "Partyou {{cookiecutter.project_name}}",
+  "author_email": "partyou@partyou.com.br"
+}
