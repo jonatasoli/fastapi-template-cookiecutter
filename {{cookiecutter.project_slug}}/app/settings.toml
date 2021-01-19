@@ -1,12 +1,4 @@
 [default]
-API_V1_STR="/{{cookiecutter.app_slug}}/v1"
+API_V1_STR="/{{cookiecutter.project_name_kebabcase}}/v1"
 APP_NAME="Microservice {{cookiecutter.project_name}}"
-
-[development]
-APP_VERSION="1"
-
-[staging]
-APP_VERSION="1"
-
-[production]
-APP_VERSION="1"
+DEFAULT_TIMEZONE="America/Sao_Paulo"
