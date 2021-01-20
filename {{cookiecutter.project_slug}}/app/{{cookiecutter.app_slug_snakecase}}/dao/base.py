@@ -45,10 +45,10 @@ class CRUDBase(
 
         return db_obj
 
-    async def _get(self, id: Any):
+    async def _get(self, obj_id: Any):
         try:
             async with get_session() as db:
-                smtm = await db.execute(select(self.model).filter(id == id))
+                smtm = await db.execute(select(self.model).filter(self.model.id == obj_id))
                 return smtm.scalars().first()
 
         except (DataError, DatabaseError, DisconnectionError, IntegrityError) as err:
@@ -57,9 +57,9 @@ class CRUDBase(
             logger.error(f"Error in dao {e}")
             raise e
 
-    async def get(self, id: Any):
+    async def get(self, obj_id: Any):
         try:
-            db_obj = await self._get(id)
+            db_obj = await self._get(obj_id)
             response = self.Meta.response_get_type.from_orm(db_obj)
             return response
 
@@ -84,9 +84,9 @@ class CRUDBase(
             logger.error(f"Error in dao {e}")
             raise e
 
-    async def update(self, id: Any, obj_in: UpdateSchemaType) -> ModelType:
+    async def update(self, obj_id: Any, obj_in: UpdateSchemaType) -> ModelType:
         try:
-            db_obj = await self._get(id)
+            db_obj = await self._get(obj_id)
             response = None
             if db_obj:
                 db_obj = self.obj_in_to_db_obj_attrs(obj_in, db_obj)

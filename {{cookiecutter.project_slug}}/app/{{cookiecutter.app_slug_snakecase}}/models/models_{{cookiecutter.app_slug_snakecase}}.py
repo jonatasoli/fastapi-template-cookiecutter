@@ -1,6 +1,6 @@
 from ext.database import Base
 from .audit_mixins import AuditMixin
-from sqlalchemy import Column, String, Integer, Boolean, DateTime
+from sqlalchemy import Column, String, Integer
 
 
 class {{cookiecutter.model_name}}(Base, AuditMixin):

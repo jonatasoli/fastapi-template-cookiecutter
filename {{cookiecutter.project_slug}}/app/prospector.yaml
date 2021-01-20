@@ -31,6 +31,8 @@ pyflakes:
 
 pylint:
   run: true
+  disable:
+    - E1136
 
 dodgy:
   run: true
@@ -42,10 +44,10 @@ pyroma:
   run: true
 
 vulture:
-  run: true
+  run: false
 
 frosted:
-  run: true
+  run: false
 
 mypy:
   options:

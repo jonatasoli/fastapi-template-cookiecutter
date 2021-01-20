@@ -23,7 +23,7 @@ async def update_{{cookiecutter.model_slug_snakecase}}({{cookiecutter.model_slug
         {{cookiecutter.model_slug_snakecase}}_data.name = name
 
         logger.info({{cookiecutter.model_slug_snakecase}}_data.name)
-        return await {{cookiecutter.model_slug_snakecase}}.update(id={{cookiecutter.model_slug_snakecase}}_id, obj_in={{cookiecutter.model_slug_snakecase}}_data)
+        return await {{cookiecutter.model_slug_snakecase}}.update(obj_id={{cookiecutter.model_slug_snakecase}}_id, obj_in={{cookiecutter.model_slug_snakecase}}_data)
     except Exception as e:
         logger.error(f"Error in add {{cookiecutter.model_slug_snakecase}} {e}")
         raise e
@@ -32,7 +32,7 @@ async def update_{{cookiecutter.model_slug_snakecase}}({{cookiecutter.model_slug
 async def get_{{cookiecutter.model_slug_snakecase}}({{cookiecutter.model_slug_snakecase}}_id):
     try:
         logger.info({{cookiecutter.model_slug_snakecase}}_id)
-        return await {{cookiecutter.model_slug_snakecase}}.get(id={{cookiecutter.model_slug_snakecase}}_id)
+        return await {{cookiecutter.model_slug_snakecase}}.get(obj_id={{cookiecutter.model_slug_snakecase}}_id)
     except Exception as e:
         logger.error(f"Error in add {{cookiecutter.model_slug_snakecase}} {e}")
         raise e

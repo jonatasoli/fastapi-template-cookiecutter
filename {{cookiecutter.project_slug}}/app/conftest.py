@@ -1,19 +1,16 @@
-from typing import Generator
-from loguru import logger
+import sys
+from os.path import abspath
+from os.path import dirname as d
 
 import pytest
-from fastapi.testclient import TestClient
 from alembic.config import main
-
-import sys
-from os.path import dirname as d
-from os.path import abspath, join
-
-root_dir = d(abspath(__file__))
-sys.path.append(root_dir)
+from fastapi.testclient import TestClient
 
 from config import settings
 from main import create_app as app
+
+root_dir = d(abspath(__file__))
+sys.path.append(root_dir)
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -23,7 +20,6 @@ def set_test_settings():
 
 @pytest.fixture
 def client():
-
     main(["--raiseerr", "upgrade", "head"])
 
     with TestClient(app()) as client:

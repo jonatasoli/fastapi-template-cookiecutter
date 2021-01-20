@@ -26,7 +26,7 @@ async def update_{{cookiecutter.model_slug_snakecase}}(*, id: int, data: {{cooki
 
 
 @{{cookiecutter.app_slug_snakecase}}_router.get("/get/{id}", status_code=status.HTTP_200_OK)
-async def update_{{cookiecutter.model_slug_snakecase}}(*, id: int):
+async def get_{{cookiecutter.model_slug_snakecase}}(*, id: int):
     try:
         return await services_{{cookiecutter.app_slug_snakecase}}.get_{{cookiecutter.model_slug_snakecase}}(id)
     except Exception as e:
