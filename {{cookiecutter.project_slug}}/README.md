@@ -11,8 +11,10 @@
 
 Para manter um código limpo, devemos instalar o pre-commit hook. Execute os seguintes comandos na raiz do projeto:
 
-::
+```
+$ chmod +x pre-commit.sh
+```
 
-    $ chmod +x pre-commit.sh
-
-    $ ln -s ../../pre-commit.sh .git/hooks/pre-commit
+```
+$ ln -s ../../pre-commit.sh .git/hooks/pre-commit
+```
