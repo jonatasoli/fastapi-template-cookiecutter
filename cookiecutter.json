@@ -7,7 +7,7 @@
   ],
   "project_name": "My New Project",
   "project_name_kebabcase": "{{cookiecutter.project_name|kebabcase|replace(' ', '')|replace('-', '', 1)}}",
-  "project_slug": "partyou-microservice-{{cookiecutter.project_name_kebabcase}}",
+  "project_slug": "partyou-fastapi-{{cookiecutter.project_name_kebabcase}}",
   "app_name": "My New App",
   "app_slug": "{{cookiecutter.app_name|kebabcase|replace(' ', '')|replace('-', '', 1)}}",
   "app_slug_snakecase": "{{cookiecutter.app_name|snakecase|replace(' ', '')|replace('_', '', 1)}}",
