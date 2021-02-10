@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "partyou-microservice-auth"
+name = "fastapi-microservice"
 version = "0.1.0"
-description = "Partyou Auth Domain"
-authors = ["Admin <jonatas@partyou.com.br>"]
+description = "Template Domain"
+authors = ["Admin <jonatas@email.com>"]
 
 [tool.poetry.dependencies]
 python = "~3.9"

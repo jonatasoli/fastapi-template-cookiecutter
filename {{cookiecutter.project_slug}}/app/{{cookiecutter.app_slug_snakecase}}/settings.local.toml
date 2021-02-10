@@ -1,12 +1,12 @@
 [development]
 APP_VERSION="1"
-DB_DSN = "postgresql://partyoudbuser:partyou123@localhost:5432/db_{{cookiecutter.app_slug_snakecase}}_dev"
+DB_DSN = "postgresql://user:pass@localhost:5432/db_{{cookiecutter.app_slug_snakecase}}_dev"
 MAIN_APP ="example"
 API_V1_STR = "/{{cookiecutter.app_slug}}"
 APP_NAME = "{{cookiecutter.app_name}}"
 
 [testing]
-DB_DSN = "postgresql://partyoudbuser:partyou123@localhost:5432/db_test"
+DB_DSN = "postgresql://user:pass@localhost:5432/db_{{cookiecutter.app_slug_snakecase}}_dev"
 MAIN_APP ="example"
 API_V1_STR = "/{{cookiecutter.app_slug}}"
 APP_NAME = "{{cookiecutter.app_name}}"
