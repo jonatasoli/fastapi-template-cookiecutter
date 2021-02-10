@@ -1,19 +1,19 @@
 {
-  "_extensions": [
-    "kamidana.extensions.CookiecutterAdditionalModulesExtension"
-  ],
-  "_additional_modules": [
-    "kamidana.additionals.naming"
-  ],
-  "project_name": "My New Project",
-  "project_name_kebabcase": "{{cookiecutter.project_name|kebabcase|replace(' ', '')|replace('-', '', 1)}}",
-  "project_slug": "partyou-fastapi-{{cookiecutter.project_name_kebabcase}}",
-  "app_name": "My New App",
-  "app_slug": "{{cookiecutter.app_name|kebabcase|replace(' ', '')|replace('-', '', 1)}}",
-  "app_slug_snakecase": "{{cookiecutter.app_name|snakecase|replace(' ', '')|replace('_', '', 1)}}",
-  "model_name": "MyNewModel",
-  "model_slug_snakecase": "{{cookiecutter.model_name|snakecase|replace(' ', '')|replace('_', '', 1)}}",
-  "version": "0.1.0",
-  "description": "Partyou {{cookiecutter.project_name}}",
-  "author_email": "partyou@partyou.com.br"
+    "_extensions": [
+        "kamidana.extensions.CookiecutterAdditionalModulesExtension"
+    ],
+    "_additional_modules": [
+        "kamidana.additionals.naming"
+    ],
+    "project_name": "My New Project",
+    "project_name_kebabcase": "{{cookiecutter.project_name|kebabcase|replace(' ', '')|replace('-', '', 1)}}",
+    "project_slug": "service-fastapi-{{cookiecutter.project_name_kebabcase}}",
+    "app_name": "My New App",
+    "app_slug": "{{cookiecutter.app_name|kebabcase|replace(' ', '')|replace('-', '', 1)}}",
+    "app_slug_snakecase": "{{cookiecutter.app_name|snakecase|replace(' ', '')|replace('_', '', 1)}}",
+    "model_name": "MyNewModel",
+    "model_slug_snakecase": "{{cookiecutter.model_name|snakecase|replace(' ', '')|replace('_', '', 1)}}",
+    "version": "0.1.0",
+    "description": "Project {{cookiecutter.project_name}}",
+    "author_email": "admin@admin.com"
 }
